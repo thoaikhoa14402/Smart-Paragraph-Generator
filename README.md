@@ -11,4 +11,6 @@ to run server:
 # To run react-app
 run this command: 
 npm install (for the first time)
+
+to run app:
 npm start
