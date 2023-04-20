@@ -2,7 +2,7 @@
 Using the GPT-2 language model trained on Vietnamese language dataset to automatically predict and generate natural language text like humans. 
 
 # In folder GPT2: 
-run this command for install neccessary:
+run this command to install neccessary packages:
 	pip install -r requirements.txt
 
 to run server: 
