@@ -1,0 +1,226 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+div.title {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  /* color: #12b3f9; */
+  background: linear-gradient(to right, #0381ed, #0fc6fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+div.main-content {
+  display: flex;
+  gap: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  /* background-color: red; */
+  margin-top: 7rem;
+}
+
+div.main-content > form.generate-form {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: center;
+  margin-left: 15rem;
+  /* background-color: aqua; */
+}
+
+
+div.main-content > form.generate-form > div.paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;  
+}
+
+
+div.main-content > form.generate-form > div.paragraph > label {
+  color: #002ea8;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+div.main-content > form.generate-form > div.paragraph > textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+  height: 14rem;
+  width: 60rem;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid #12b3f9;
+  border-radius: 6px;
+}
+
+div.main-content > form.generate-form > div.generate {
+  display: flex;
+  /* background-color: #12b3f9; */
+  width: 60rem;
+  justify-content: space-between;
+}
+
+div.main-content > form.generate-form > div.generate > input.paragraph-length {
+  /* background-color: red; */
+  display: block;
+  margin-top: 2.4rem;
+  height: 4rem;
+  width: 15rem;
+  padding: 1rem;
+  outline: none;
+  font-family: inherit;
+}
+
+div.main-content > form.generate-form > div.generate > button.generate-btn {
+  margin-top: 2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(to right, #0381ed, #0fc6fa);
+  /* background-color: #0fc6fa; */
+}
+
+
+div.main-content > div.result {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  
+}
+
+
+div.main-content > div.result  > div.res-title {
+  color: #002ea8;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+div.main-content > div.result > div.response {
+  background-color: #0084ff;
+  /* background-color: #e7f2fa; */
+  color: #fff;
+  /* color: black; */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  /* border: 2px solid #12b3f9; */
+  line-height: 2.4rem;
+  font-family: inherit;
+  width: 65rem;
+  max-height: 50rem;
+  overflow: auto;
+}
+
+
+
+div.main-content > div.result > textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+  height: 14rem;
+  width: 60rem;
+  resize: none;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid #12b3f9;
+  border-radius: 6px;
+}
+
+
+
+/* css loading */
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: -2rem;  
+  position: relative;
+  background: #FFF;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+.loader-hidden {
+  animation: shadowPulseHidden 2s linear infinite;
+}
+
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+  }
+  66% {
+    background: #FF3D00;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+  }
+}
+
+
+@keyframes shadowPulseHidden {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  66% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+}
+
