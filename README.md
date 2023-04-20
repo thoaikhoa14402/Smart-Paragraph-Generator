@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +71,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # Smart-Paragraph-Generator
 Using the GPT-2 language model trained on Vietnamese language dataset to automatically predict and generate natural language text like humans. 
->>>>>>> a44552843ad2213bcf5ccc9a7fab97f41b81859c
