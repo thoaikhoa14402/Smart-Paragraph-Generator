@@ -6,7 +6,7 @@ run this command to install neccessary packages:
 	pip install -r requirements.txt
 
 to run server: 
-	python deploy.py
+	python app.py
 
 # To run react-app
 run this command: 
